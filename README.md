@@ -30,6 +30,8 @@ El sistema ha sido testeado bajo el usuario `operador_red`, verificando la restr
 Para garantizar la alta disponibilidad y seguridad de la infraestructura GPON, se documentan las siguientes pruebas de estrés:
 
 ![Error de Seguridad](pruebas/Seguridad_denegada.PNG)
+
+De la imagen anterior se extrae lo siguiente.
 ### 6.1. Validación de Seguridad (RBAC)
 Se intentó la eliminación de tablas críticas con el usuario `operador_red`. El sistema aplicó correctamente la restricción de privilegios.
 
