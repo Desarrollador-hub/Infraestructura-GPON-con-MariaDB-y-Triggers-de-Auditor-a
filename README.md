@@ -28,22 +28,14 @@ El sistema ha sido testeado bajo el usuario `operador_red`, verificando la restr
 
 ## 6. Protocolos de Validación y Control de Errores
 Para garantizar la alta disponibilidad y seguridad de la infraestructura GPON, se documentan las siguientes pruebas de estrés:
+![Error de Seguridad](pruebas/seguridad_denegada.png)
 ### 6.1. Validación de Seguridad (RBAC)
 Se intentó la eliminación de tablas críticas con el usuario `operador_red`. El sistema aplicó correctamente la restricción de privilegios.
 
 **Prueba:** `DROP TABLE OLT;`  
 **Resultado:** `ERROR 1142 (42000): DROP command denied`
-
-![Error de Seguridad](img/pruebas/seguridad_denegada.png)
-
 ### 6.2. Integridad de Datos e IPs
 Se validó la restricción de unicidad para evitar duplicidad de IPs de gestión en los nodos Huawei/ZTE.
-
 **Resultado:** `ERROR 1062 (23000): Duplicate entry`
-
-![Error de Duplicidad](img/pruebas/error_duplicidad.png)
-
 ### 6.3. Auditoría de Eventos
 Cada inserción genera un registro automático en la tabla de logs, asegurando la trazabilidad de la red.
-
-![Log de Auditoría](img/pruebas/tabla_auditoria.png)
