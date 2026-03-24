@@ -4,7 +4,7 @@
 Este repositorio contiene el diseño e implementación de una base de datos relacional orientada a la administración de elementos de red pasiva (GPON). El sistema permite gestionar nodos OLT de diversos fabricantes (Huawei, ZTE), supervisar la capacidad de los puertos PON y auditar automáticamente cualquier cambio estructural mediante disparadores (triggers).
 
 ## 2. Características Técnicas
-- **Entorno de Despliegue:** Debian 12 / MariaDB 11.
+- **Entorno de Despliegue:** Debian 13 / MariaDB 11.
 - **Automatización:** Triggers para el registro de eventos en tiempo real.
 - **Seguridad:** Implementación de privilegios granulares (RBAC) para el perfil `operador_red`.
 - **Escalabilidad:** Soporte para arquitecturas multi-fabricante y nodos distribuidos geográficamente.
