@@ -17,11 +17,11 @@ Este repositorio contiene el diseño e implementación de una base de datos rela
 
 ## 4. Guía de Despliegue
 Para replicar esta infraestructura, ejecute la siguiente secuencia en su terminal de MariaDB:
-\```bash
+```bash
 sudo mariadb < scripts/01_schema_init.sql
 sudo mariadb < scripts/02_security_config.sql
 sudo mariadb < scripts/03_data_seed.sql
-\```
+```
 
 ## 5. Validación de Seguridad
 El sistema ha sido testeado bajo el usuario `operador_red`, verificando la restricción de comandos `DROP` y la correcta inserción de datos auditados.
